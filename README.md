@@ -1,7 +1,7 @@
 # ShakeView
 颤抖吧views
 
-+ (void)shakeAnimation :(UIView *)vCell{
+        + (void)shakeAnimation :(UIView *)vCell{
     
     // 晃动次数
     static int numberOfShakes = 4;
@@ -31,4 +31,4 @@
     CFRelease(shakePath);
     //添加动画到输入框layer上--- bingo---
     [vCell.layer addAnimation:shakeAnimation forKey:kCATransition];
-  }
+    }
